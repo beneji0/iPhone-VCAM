@@ -1,64 +1,62 @@
-# deb file translated to english in release folder
+deb file translated to English in release folder
 
+iPhone-VCAM
+A virtual camera based on Cydia Substrate
 
+Purpose
+Replace the iOS system camera feed
 
+Supported Software
+Supports the vast majority of apps
 
-# iPhone-VCAM
+Supported System Versions
+The development and testing version is iOS 13.3. Due to lack of other versions, real device testing is not available.
+Theoretically supports iOS 11.0 and above
+iOS 15 may have some issues, and currently, there is no jailbreak solution for iOS 15.
 
-基于 *Cydia Substrate* 的虚拟摄像头
+Getting Started
+Installation
+Usage
+In the following instructions:
 
-# 作用
+- represents the volume down button
++ represents the volume up button
+Switching between these within one second triggers the actions
+Full Mode
+There are more pop-ups, and some software may pause operation after a pop-up.
 
-替换 iOS 系统摄像头画面
+Hotkey: + -
+Function: See button description
+Download Video
+Each time a download is completed, a system mute prompt will pop up.
+Video File
+Online video address. Ensure this link points to an accessible video.
+If the file is corrupted, unplayable, or unsupported, no changes will occur.
+Streaming Media (Not supported yet)
+Convenient Mode
+Minimize pop-ups to avoid interrupting the current program's operation.
 
-## 生效软件
-- 支持绝大多数App
+Hotkey: - + triggers video selection
+If the download video function is set, this hotkey will trigger the download video instead.
+When the download video link is set to empty, it continues to use video selection.
+After downloading, a mute mode pop-up will appear.
+If the remote file is unavailable, replacement is disabled.
+Frequently Asked Questions
+In the following instructions:
 
-## 支持系统版本
+- represents the volume down button
++ represents the volume up button
+Switching between these within one second triggers the actions
+Q: How to select video resolution?
+A: Use the camera and press + -. Detailed information will appear. If the width is greater than the height, it indicates the video direction is rotated. In most cases, the rear camera needs a 90-degree counterclockwise rotation, and the front camera needs a 90-degree clockwise rotation. Sometimes, rotation and horizontal flipping are required. The specific video direction depends on the software's processing method and needs to be observed by yourself. The replacement preview always maintains the correct direction. If the video's width and height do not match the prompt, issues like screen displacement, preview stretching, or crashes may occur.
 
-- 开发测试版本为 iOS13.3、因为手上没有其他版本所以无法真机测试
-- 理论支持 iOS11.0 以上
-- iOS15可能出点问题，且目前iOS15越狱方案没有
+In short, the replacement video's width and height must match the + - hotkey prompt's W and H. Adjust the replacement video angle based on the previewed image.
 
-# 开始使用
+Q: Screen rotation after taking a photo?
+A: The preview always maintains the correct direction. Some software directly processes horizontal images but rotates the preview for the user.
 
-## 安装
+In short, rotate the replacement video in the opposite direction of the rotated preview.
 
-## 使用
-- 以下 **-** 符号表示 **音量减键**, **+** 表示 **音量加键**, 在一秒内切换点击以触发
-
-### 完整模式
-弹窗较多，有些软件会在弹窗后暂停运行
-- 快捷键 + -
-- 功能见按钮说明
-- 下载视频
-    - *每次下载完成后都会有系统的静音提示框弹出*
-    1. 视频文件
-        1. 在线视频地址，需要确保这个链接指向了一个可访问的视频
-        2. 如果文件损坏或不可播放或不受支持不会发生任何变化
-    2. 流式媒体(暂未支持)
-
-### 便捷模式
-尽量减少弹窗以防止打断当前程序的运行状态  
-- 快捷键 - + 触发**选择视频**
-- 如果设置了**下载视频**功能，则此快捷键改为触发**下载视频**
-- 将**下载视频**的连接设置为空时，继续使用**选择视频**
-    - 下载完成后会有静音模式弹窗会弹出
-    - 如果远程文件不可用则禁用替换
-
-# 常见问题
-- 以下 **-** 符号表示 **音量减键**, **+** 表示 **音量加键**, 在一秒内切换点击以触发
-
-## Q: 该怎样选择视频分辨率？
-A: 使用摄像头后 + -，将会出现详细信息。 当宽度大于高度时，表示视频的方向时旋转的，大部分情况下后置摄像头需要逆时针90度，前置摄像头顺时针90度，有时需要旋转并水平翻转。视频的具体方向因不同软件处理方式不同需要自行观察。**替换预览始终保持正确的方向**，*如果视频的宽高和提示的不一致时，可能出现画面与识别结果偏移、预览拉伸甚至闪退的情况*
-- 简单来说，替换视频的宽高必须和 + - 快捷键提示的 W, H一致，根据预览到的画面调整替换视频角度
-
-## Q: 拍照后画面旋转？
-A: 预览始终保持了正确的方向，部分软件会直接处理横向的图片，但是给用户预览的时候把预览旋转过来了
-- 简单来说，根据被旋转的方向，把替换视频提前往相反的方向旋转一次就好了
-
-
-
-# TODO
-- 音频支持
-- 修复有些软件录像循环后失效问题
+TODO
+Audio support
+Fix the issue where some software fails to loop recording after a while
